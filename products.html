@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products - Patel Motors</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/animations.css" />
+    <link rel="stylesheet" href="styles/products.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <img src="assets/logo.png" alt="Patel Motors" class="logo" />
+          <span class="logo-text">Patel Motors</span>
+        </div>
+        <ul class="nav-menu" id="nav-menu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="products.html" class="nav-link active">Products</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <div class="nav-controls">
+          <button class="theme-toggle" id="theme-toggle">
+            <i class="fas fa-moon"></i>
+          </button>
+          <div class="hamburger" id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="products-hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">Our Product Range</h1>
+          <p class="hero-subtitle">
+            Premium quality automobile parts for all major vehicle models
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Main Section -->
+    <section class="products-main">
+      <div class="products-layout">
+        <!-- Left Sidebar - Categories -->
+        <div class="categories-sidebar">
+          <h3>Categories</h3>
+          <div class="category-filters">
+            <div class="filter-section">
+              <h4>Vehicle Type</h4>
+              <div class="category-list">
+                <label class="category-checkbox">
+                  <input type="checkbox" data-category="bolero" checked />
+                  <span class="checkmark"></span>
+                  <span class="category-name">Bolero (4)</span>
+                </label>
+                <label class="category-checkbox">
+                  <input type="checkbox" data-category="swift" />
+                  <span class="checkmark"></span>
+                  <span class="category-name">Swift (3)</span>
+                </label>
+                <label class="category-checkbox">
+                  <input type="checkbox" data-category="pickup" />
+                  <span class="checkmark"></span>
+                  <span class="category-name">Pickup (3)</span>
+                </label>
+                <label class="category-checkbox">
+                  <input type="checkbox" data-category="tata" />
+                  <span class="checkmark"></span>
+                  <span class="category-name">Tata (2)</span>
+                </label>
+                <label class="category-checkbox">
+                  <input type="checkbox" data-category="hyundai" />
+                  <span class="checkmark"></span>
+                  <span class="category-name">Hyundai (2)</span>
+                </label>
+              </div>
+            </div>
+            <div>
+              <button class="apply-filter-btn">Apply Filters</button>
+              <button class="clear-filter-btn">Clear All</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Content - Products -->
+        <div class="products-content">
+          <div class="catalog-header">
+            <h1>Product Catalog</h1>
+            <div class="catalog-controls">
+              <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input
+                  type="text"
+                  placeholder="Search among 100+ products"
+                  id="product-search"
+                />
+              </div>
+            <div class="active-filters" id="active-filters">
+              <!-- Active filters will appear here -->
+            </div>
+          </div>
+
+          <div class="products-grid" id="products-grid">
+            <!-- Products will be loaded here dynamically -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Modal -->
+    <div class="product-modal" id="productModal">
+      <div class="modal-content">
+        <span class="close-modal" onclick="closeProductModal()">&times;</span>
+        <div class="modal-body">
+          <div class="modal-image">
+            <img id="modalImage" src="" alt="Product Image" />
+            <div class="image-fallback" id="modalImageFallback" style="display: none;">
+              <i class="fas fa-image"></i>
+            </div>
+          </div>
+          <div class="modal-info">
+            <h2 id="modalTitle">Product Name</h2>
+            <p id="modalDescription">Product description will appear here...</p>
+            <div class="modal-features">
+              <h4>Features:</h4>
+              <ul id="modalFeatures">
+                <li>High-quality materials</li>
+                <li>Perfect fit guarantee</li>
+                <li>Durable construction</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <img src="assets/logo.png" alt="Patel Motors" />
+              <span>Patel Motors</span>
+            </div>
+            <p>
+              Manufacturing excellence in automobile parts since 1995. Your
+              trusted partner for quality and reliability.
+            </p>
+            <div class="social-links">
+              <a href="#" class="social-link"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="#" onclick="toggleTheme()">Toggle Theme</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Products</h4>
+            <ul>
+              <li><a href="#" data-category="bolero">Bolero Parts</a></li>
+              <li><a href="#" data-category="swift">Swift Parts</a></li>
+              <li><a href="#" data-category="pickup">Pickup Parts</a></li>
+              <li><a href="#" data-category="tata">Tata Parts</a></li>
+              <li><a href="#" data-category="hyundai">Hyundai Parts</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Contact Info</h4>
+            <div class="contact-info">
+              <p><i class="fas fa-phone"></i> +91 [phone_number]</p>
+              <p><i class="fas fa-envelope"></i> [email]</p>
+              <p><i class="fas fa-map-marker-alt"></i> [address]</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Patel Motors. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/products.js"></script>
+  </body>
+</html>

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Patel Motors</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/animations.css" />
+    <link rel="stylesheet" href="styles/contact.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <img src="assets/logo.png" alt="Patel Motors" class="logo" />
+          <span class="logo-text">Patel Motors</span>
+        </div>
+        <ul class="nav-menu" id="nav-menu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="products.html" class="nav-link">Products</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link active">Contact</a>
+          </li>
+        </ul>
+        <div class="nav-controls">
+          <button class="theme-toggle" id="theme-toggle">
+            <i class="fas fa-moon"></i>
+          </button>
+          <div class="hamburger" id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="contact-hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">Get In Touch</h1>
+          <p class="hero-subtitle">
+            We're here to help with all your automobile parts needs
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Contact Form -->
+          <div class="contact-form-container">
+            <div class="form-header">
+              <h2>Send us a Message</h2>
+              <p>
+                Fill out the form below and we'll get back to you as soon as
+                possible
+              </p>
+            </div>
+            <form class="contact-form" id="contactForm">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required />
+                <span class="form-icon"><i class="fas fa-user"></i></span>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required />
+                <span class="form-icon"><i class="fas fa-envelope"></i></span>
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required />
+                <span class="form-icon"><i class="fas fa-phone"></i></span>
+              </div>
+
+              <!-- <div class="form-group">
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject" required>
+                  <option value="">Select a subject</option>
+                  <option value="product-inquiry">Product Inquiry</option>
+                  <option value="quote-request">Quote Request</option>
+                  <option value="technical-support">Technical Support</option>
+                  <option value="partnership">Partnership Opportunity</option>
+                  <option value="other">Other</option>
+                </select>
+                <span class="form-icon"><i class="fas fa-tag"></i></span>
+              </div> -->
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Tell us about your requirements..."
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="submit-btn">
+                <span class="btn-text">Send Message</span>
+                <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+              </button>
+            </form>
+          </div>
+
+          <!-- Contact Information -->
+          <div class="contact-info-container">
+            <div class="contact-card">
+              <h3>Contact Information</h3>
+              <p>
+                Ready to help you with premium automobile parts and exceptional
+                service.
+              </p>
+
+              <div class="contact-details">
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <div class="contact-text">
+                    <h4>Address</h4>
+                    <p>
+                      [address]<br />Industrial Area, [city]<br />[state] -
+                      [pincode]
+                    </p>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <i class="fas fa-phone"></i>
+                  </div>
+                  <div class="contact-text">
+                    <h4>Phone</h4>
+                    <p>+91 [phone_number]</p>
+                    <p>+91 [phone_number_2]</p>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <div class="contact-text">
+                    <h4>Email</h4>
+                    <p>[email]</p>
+                    <p>[email_sales]</p>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <i class="fas fa-clock"></i>
+                  </div>
+                  <div class="contact-text">
+                    <h4>Business Hours</h4>
+                    <p>Monday - Saturday: 9:00 AM - 6:00 PM</p>
+                    <p>Sunday: Closed</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="quick-contact">
+                <h4>Quick Contact</h4>
+                <div class="quick-buttons">
+                  <a href="tel:+91[phone_number]" class="quick-btn phone-btn">
+                    <i class="fas fa-phone"></i>
+                    <span>Call Now</span>
+                  </a>
+                  <a
+                    href="https://wa.me/91[phone_number]"
+                    class="quick-btn whatsapp-btn"
+                    target="_blank"
+                  >
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Find Our Location</h2>
+          <p>Visit our manufacturing facility and showroom</p>
+        </div>
+        <div class="map-container">
+          <div class="map-placeholder">
+            <div class="map-content">
+              <i class="fas fa-map-marker-alt"></i>
+              <h3>Patel Motors</h3>
+              <p>[address]</p>
+              <a
+                href="https://maps.google.com"
+                target="_blank"
+                class="map-link"
+              >
+                <i class="fas fa-external-link-alt"></i>
+                Open in Google Maps
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Frequently Asked Questions</h2>
+          <p>
+            Quick answers to common questions about our products and services
+          </p>
+        </div>
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-question">
+              <h4>What is the warranty period for your parts?</h4>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                We provide a comprehensive 2-year warranty on all our
+                manufactured parts, covering manufacturing defects and material
+                quality issues.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h4>Do you provide installation services?</h4>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Yes, we have a network of certified installation partners across
+                major cities. We can arrange professional installation for all
+                our products.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h4>How long does delivery take?</h4>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Standard delivery takes 3-5 business days within India. Express
+                delivery options are available for urgent requirements.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h4>Do you manufacture custom parts?</h4>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Yes, we offer custom manufacturing services for bulk orders.
+                Contact our technical team to discuss your specific
+                requirements.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <img src="assets/logo.png" alt="Patel Motors" />
+              <span>Patel Motors</span>
+            </div>
+            <p>
+              Manufacturing excellence in automobile parts since 1995. Your
+              trusted partner for quality and reliability.
+            </p>
+            <div class="social-links">
+              <a href="#" class="social-link"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="#" onclick="toggleTheme()">Toggle Theme</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Products</h4>
+            <ul>
+              <li><a href="products.html#bolero">Bolero Parts</a></li>
+              <li><a href="products.html#swift">Swift Parts</a></li>
+              <li><a href="products.html#pickup">Pickup Parts</a></li>
+              <li><a href="products.html">All Products</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Contact Info</h4>
+            <div class="contact-info">
+              <p><i class="fas fa-phone"></i> +91 [phone_number]</p>
+              <p><i class="fas fa-envelope"></i> [email]</p>
+              <p><i class="fas fa-map-marker-alt"></i> [address]</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Patel Motors. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/contact.js"></script>
+  </body>
+</html>

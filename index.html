@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patel Motors - Premium Auto Parts Manufacturing</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/animations.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <img src="assets/logo.png" alt="Patel Motors" class="logo" />
+          <span class="logo-text">Patel Motors</span>
+        </div>
+        <ul class="nav-menu" id="nav-menu">
+          <li class="nav-item">
+            <a href="#home" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="products.html" class="nav-link">Products</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <div class="nav-controls">
+          <button class="theme-toggle" id="theme-toggle">
+            <i class="fas fa-moon"></i>
+          </button>
+          <div class="hamburger" id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-background">
+        <div class="floating-parts">
+          <div class="part part-1"></div>
+          <div class="part part-2"></div>
+          <div class="part part-3"></div>
+        </div>
+      </div>
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">
+            <span class="title-line">Premium Auto Parts</span>
+            <span class="title-line">Manufacturing Excellence</span>
+          </h1>
+          <p class="hero-description">
+            Crafting high-quality automobile parts for Bolero, Swift, Pickup
+            trucks and more. Your trusted partner in automotive manufacturing
+            since 1995.
+          </p>
+          <div class="hero-buttons">
+            <a href="products.html" class="btn btn-primary">
+              <span>Explore Products</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="contact.html" class="btn btn-secondary">
+              <span>Contact Us</span>
+              <i class="fas fa-phone"></i>
+            </a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="manufacturers-showcase">
+            <div class="showcase-container">
+              <div class="manufacturer-card active" data-brand="bolero">
+                <div class="card-image">
+                  <img src="assets/bolero.png" alt="Mahindra Bolero" />
+                </div>
+                <div class="card-info">
+                  <h3>Mahindra Bolero</h3>
+                  <p>Premium body parts & accessories</p>
+                </div>
+              </div>
+
+              <div class="manufacturer-card" data-brand="swift">
+                <div class="card-image">
+                  <img src="assets/bolero.png" alt="Maruti Swift" />
+                </div>
+                <div class="card-info">
+                  <h3>Maruti Swift</h3>
+                  <p>High-quality replacement parts</p>
+                </div>
+              </div>
+
+              <div class="manufacturer-card" data-brand="pickup">
+                <div class="card-image">
+                  <img src="assets/bolero.png" alt="Pickup Trucks" />
+                </div>
+                <div class="card-info">
+                  <h3>Pickup Trucks</h3>
+                  <p>Heavy-duty commercial parts</p>
+                </div>
+              </div>
+
+              <div class="manufacturer-card" data-brand="tata">
+                <div class="card-image">
+                  <img src="assets/bolero.png" alt="Tata Motors" />
+                </div>
+                <div class="card-info">
+                  <h3>Tata Motors</h3>
+                  <p>Reliable commercial vehicle parts</p>
+                </div>
+              </div>
+
+              <div class="manufacturer-card" data-brand="hyundai">
+                <div class="card-image">
+                  <img src="assets/bolero.png" alt="Hyundai" />
+                </div>
+                <div class="card-info">
+                  <h3>Hyundai</h3>
+                  <p>Modern vehicle components</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="showcase-controls">
+              <button class="control-btn active" data-target="bolero">
+                <span class="btn-icon"><i class="fas fa-truck"></i></span>
+                <span class="btn-text">Bolero</span>
+              </button>
+              <button class="control-btn" data-target="swift">
+                <span class="btn-icon"><i class="fas fa-car"></i></span>
+                <span class="btn-text">Swift</span>
+              </button>
+              <button class="control-btn" data-target="pickup">
+                <span class="btn-icon"
+                  ><i class="fas fa-truck-pickup"></i
+                ></span>
+                <span class="btn-text">Pickup</span>
+              </button>
+              <button class="control-btn" data-target="tata">
+                <span class="btn-icon"><i class="fas fa-bus"></i></span>
+                <span class="btn-text">Tata</span>
+              </button>
+              <button class="control-btn" data-target="hyundai">
+                <span class="btn-icon"><i class="fas fa-car-side"></i></span>
+                <span class="btn-text">Hyundai</span>
+              </button>
+            </div>
+
+            <div class="showcase-indicators">
+              <div class="indicator active"></div>
+              <div class="indicator"></div>
+              <div class="indicator"></div>
+              <div class="indicator"></div>
+              <div class="indicator"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-arrow"></div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Why Choose Patel Motors</h2>
+          <p class="section-subtitle">
+            Excellence in every component we manufacture
+          </p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="feature-icon">
+              <i class="fas fa-cogs"></i>
+            </div>
+            <h3>Precision Engineering</h3>
+            <p>
+              State-of-the-art manufacturing with precision tolerances for
+              perfect fit and performance.
+            </p>
+          </div>
+          <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="feature-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3>Quality Assurance</h3>
+            <p>
+              Rigorous testing and quality control ensures every part meets
+              industry standards.
+            </p>
+          </div>
+          <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="feature-icon">
+              <i class="fas fa-shipping-fast"></i>
+            </div>
+            <h3>Fast Delivery</h3>
+            <p>
+              Quick turnaround times with reliable shipping to get your parts
+              when you need them.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Preview -->
+    <section class="products-preview">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Our Product Range</h2>
+          <p class="section-subtitle">
+            Comprehensive parts for all major vehicle models
+          </p>
+        </div>
+        <div class="vehicle-categories">
+          <div class="category-card" data-aos="zoom-in" data-aos-delay="100">
+            <div class="category-image">
+              <img src="assets/bolero.png" alt="Bolero Parts" />
+            </div>
+            <div class="category-content">
+              <h3>Mahindra Bolero</h3>
+              <p>Complete range of body parts and accessories</p>
+              <a href="products.html#bolero" class="category-link"
+                >View Parts</a
+              >
+            </div>
+          </div>
+          <div class="category-card" data-aos="zoom-in" data-aos-delay="200">
+            <div class="category-image">
+              <img src="assets/bolero.png" alt="Swift Parts" />
+            </div>
+            <div class="category-content">
+              <h3>Maruti Swift</h3>
+              <p>Premium quality parts for optimal performance</p>
+              <a href="products.html#swift" class="category-link">View Parts</a>
+            </div>
+          </div>
+          <div class="category-card" data-aos="zoom-in" data-aos-delay="300">
+            <div class="category-image">
+              <img src="assets/bolero.png" alt="Pickup Parts" />
+            </div>
+            <div class="category-content">
+              <h3>Pickup Trucks</h3>
+              <p>Durable parts built for heavy-duty performance</p>
+              <a href="products.html#pickup" class="category-link"
+                >View Parts</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <img src="assets/logo.png" alt="Patel Motors" />
+              <span>Patel Motors</span>
+            </div>
+            <p>
+              Manufacturing excellence in automobile parts since 1995. Your
+              trusted partner for quality and reliability.
+            </p>
+            <div class="social-links">
+              <a href="#" class="social-link"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="#" onclick="toggleTheme()">Toggle Theme</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Products</h4>
+            <ul>
+              <li><a href="products.html#bolero">Bolero Parts</a></li>
+              <li><a href="products.html#swift">Swift Parts</a></li>
+              <li><a href="products.html#pickup">Pickup Parts</a></li>
+              <li><a href="products.html">All Products</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Contact Info</h4>
+            <div class="contact-info">
+              <p><i class="fas fa-phone"></i> +91 [phone_number]</p>
+              <p><i class="fas fa-envelope"></i> [email]</p>
+              <p><i class="fas fa-map-marker-alt"></i> [address]</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Patel Motors. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/manufacturers-showcase.js"></script>
+  </body>
+</html>
