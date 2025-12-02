@@ -408,20 +408,30 @@
   background: var(--bg-secondary);
 }
 
+.faq-item.active .faq-question {
+  background: var(--primary-color);
+}
+
+.faq-item.active .faq-question h4 {
+  color: white;
+}
+
 .faq-question h4 {
   font-size: 1.1rem;
   font-weight: 600;
   color: var(--text-primary);
   margin: 0;
+  transition: color 0.3s ease;
 }
 
 .faq-question i {
   color: var(--primary-color);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .faq-item.active .faq-question i {
   transform: rotate(180deg);
+  color: white;
 }
 
 .faq-answer {
@@ -431,14 +441,30 @@
 }
 
 .faq-item.active .faq-answer {
-  max-height: 200px;
+  max-height: 600px;
+  padding: 10px 0;
 }
 
 .faq-answer p {
-  padding: 0 1.5rem 1.5rem;
+  padding: 0 1.5rem 1rem;
   color: var(--text-secondary);
   line-height: 1.6;
   margin: 0;
+}
+
+.faq-answer ul {
+  padding: 0 1.5rem 1rem 3rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin: 0;
+}
+
+.faq-answer ul li {
+  margin-bottom: 0.5rem;
+}
+
+.faq-answer p:last-child {
+  padding-bottom: 1.5rem;
 }
 
 /* Form Validation Styles */

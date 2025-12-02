@@ -134,32 +134,49 @@ function handleFormSubmit(e) {
   }
 }
 
-function submitForm(form) {
+async function submitForm(form) {
   const submitBtn = form.querySelector(".submit-btn");
   const originalText = submitBtn.querySelector(".btn-text").textContent;
 
   // Show loading state
   submitBtn.classList.add("loading");
+  submitBtn.disabled = true;
   submitBtn.querySelector(".btn-text").textContent = "Sending...";
 
-  // Simulate form submission (replace with actual API call)
-  setTimeout(() => {
+  try {
+    const formData = new FormData(form);
+    const response = await fetch(form.action, {
+      method: "POST",
+      body: formData,
+      headers: {
+        Accept: "application/json",
+      },
+    });
+
+    if (response.ok) {
+      // Show success message
+      showSuccessMessage();
+
+      // Reset form
+      form.reset();
+
+      // Clear all validation states
+      const formGroups = form.querySelectorAll(".form-group");
+      formGroups.forEach((group) => {
+        group.classList.remove("error", "success");
+      });
+    } else {
+      throw new Error("Form submission failed");
+    }
+  } catch (error) {
+    // Show error message
+    showErrorMessage();
+  } finally {
     // Reset loading state
     submitBtn.classList.remove("loading");
+    submitBtn.disabled = false;
     submitBtn.querySelector(".btn-text").textContent = originalText;
-
-    // Show success message
-    showSuccessMessage();
-
-    // Reset form
-    form.reset();
-
-    // Clear all validation states
-    const formGroups = form.querySelectorAll(".form-group");
-    formGroups.forEach((group) => {
-      group.classList.remove("error", "success");
-    });
-  }, 2000);
+  }
 }
 
 function showSuccessMessage() {
@@ -198,15 +215,53 @@ function showSuccessMessage() {
   }, 5000);
 }
 
+function showErrorMessage() {
+  // Create error notification
+  const notification = document.createElement("div");
+  notification.className = "error-notification";
+  notification.innerHTML = `
+        <div class="notification-content">
+            <i class="fas fa-exclamation-circle"></i>
+            <span>Failed to send message. Please try again or contact us directly.</span>
+        </div>
+    `;
+
+  // Add styles
+  notification.style.cssText = `
+        position: fixed;
+        top: 100px;
+        right: 20px;
+        background: #ef4444;
+        color: white;
+        padding: 1rem 1.5rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        animation: slideInRight 0.3s ease-out;
+    `;
+
+  document.body.appendChild(notification);
+
+  // Remove notification after 5 seconds
+  setTimeout(() => {
+    notification.style.animation = "slideOutRight 0.3s ease-out";
+    setTimeout(() => {
+      document.body.removeChild(notification);
+    }, 300);
+  }, 5000);
+}
+
 // FAQ functionality
 function initFAQ() {
   const faqItems = document.querySelectorAll(".faq-item");
+  console.log("FAQ items found:", faqItems.length);
 
   faqItems.forEach((item) => {
     const question = item.querySelector(".faq-question");
 
     question.addEventListener("click", () => {
       const isActive = item.classList.contains("active");
+      console.log("FAQ clicked, isActive:", isActive);
 
       // Close all other FAQ items
       faqItems.forEach((otherItem) => {
@@ -313,6 +368,6 @@ const animationCSS = `
 `;
 
 // Inject animation CSS
-const style = document.createElement("style");
-style.textContent = animationCSS;
-document.head.appendChild(style);
+const animationStyle = document.createElement("style");
+animationStyle.textContent = animationCSS;
+document.head.appendChild(animationStyle);

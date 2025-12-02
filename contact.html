@@ -20,10 +20,10 @@
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
       <div class="nav-container">
-        <div class="nav-logo">
+        <a href="index.html" class="nav-logo">
           <img src="assets/logo.png" alt="Patel Motors" class="logo" />
           <span class="logo-text">Patel Motors</span>
-        </div>
+        </a>
         <ul class="nav-menu" id="nav-menu">
           <li class="nav-item">
             <a href="index.html" class="nav-link">Home</a>
@@ -33,6 +33,9 @@
           </li>
           <li class="nav-item">
             <a href="products.html" class="nav-link">Products</a>
+          </li>
+          <li class="nav-item">
+            <a href="catalogue.html" class="nav-link">Catalogue</a>
           </li>
           <li class="nav-item">
             <a href="contact.html" class="nav-link active">Contact</a>
@@ -76,7 +79,28 @@
                 possible
               </p>
             </div>
-            <form class="contact-form" id="contactForm">
+            <form
+              class="contact-form"
+              id="contactForm"
+              action="https://api.web3forms.com/submit"
+              method="POST"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="9661cbba-9d05-4bcd-bca3-8ea506b7f3eb"
+              />
+              <input
+                type="hidden"
+                name="subject"
+                value="New Contact Form Submission from Patel Motors Website"
+              />
+              <input
+                type="hidden"
+                name="from_name"
+                value="Patel Motors Contact Form"
+              />
+
               <div class="form-group">
                 <label for="name">Full Name</label>
                 <input type="text" id="name" name="name" required />
@@ -94,19 +118,6 @@
                 <input type="tel" id="phone" name="phone" required />
                 <span class="form-icon"><i class="fas fa-phone"></i></span>
               </div>
-
-              <!-- <div class="form-group">
-                <label for="subject">Subject</label>
-                <select id="subject" name="subject" required>
-                  <option value="">Select a subject</option>
-                  <option value="product-inquiry">Product Inquiry</option>
-                  <option value="quote-request">Quote Request</option>
-                  <option value="technical-support">Technical Support</option>
-                  <option value="partnership">Partnership Opportunity</option>
-                  <option value="other">Other</option>
-                </select>
-                <span class="form-icon"><i class="fas fa-tag"></i></span>
-              </div> -->
 
               <div class="form-group">
                 <label for="message">Message</label>
@@ -154,8 +165,7 @@
                   </div>
                   <div class="contact-text">
                     <h4>Phone</h4>
-                    <p>+91 [phone_number]</p>
-                    <p>+91 [phone_number_2]</p>
+                    <p>+91 9328629936</p>
                   </div>
                 </div>
 
@@ -165,8 +175,7 @@
                   </div>
                   <div class="contact-text">
                     <h4>Email</h4>
-                    <p>[email]</p>
-                    <p>[email_sales]</p>
+                    <p>patel.motors.7860@gmail.com</p>
                   </div>
                 </div>
 
@@ -185,12 +194,12 @@
               <div class="quick-contact">
                 <h4>Quick Contact</h4>
                 <div class="quick-buttons">
-                  <a href="tel:+91[phone_number]" class="quick-btn phone-btn">
+                  <a href="tel:+919328629936" class="quick-btn phone-btn">
                     <i class="fas fa-phone"></i>
                     <span>Call Now</span>
                   </a>
                   <a
-                    href="https://wa.me/91[phone_number]"
+                    href="https://wa.me/919328629936"
                     class="quick-btn whatsapp-btn"
                     target="_blank"
                   >
@@ -244,8 +253,18 @@
             <div class="faq-answer">
               <p>
                 We provide a comprehensive 2-year warranty on all our
-                manufactured parts, covering manufacturing defects and material
-                quality issues.
+                manufactured parts. Our warranty covers:
+              </p>
+              <ul>
+                <li>Manufacturing defects and workmanship issues</li>
+                <li>Material quality problems</li>
+                <li>Premature wear under normal usage conditions</li>
+                <li>Free replacement for defective parts</li>
+                <li>Technical support throughout the warranty period</li>
+              </ul>
+              <p>
+                Note: Warranty does not cover damage due to accidents, misuse,
+                or improper installation.
               </p>
             </div>
           </div>
@@ -258,9 +277,16 @@
             <div class="faq-answer">
               <p>
                 Yes, we have a network of certified installation partners across
-                major cities. We can arrange professional installation for all
-                our products.
+                major cities. Our installation services include:
               </p>
+              <ul>
+                <li>Professional installation by trained technicians</li>
+                <li>On-site installation at your location</li>
+                <li>Quality checks after installation</li>
+                <li>Installation warranty for added peace of mind</li>
+                <li>Technical guidance and support</li>
+              </ul>
+              <p>Contact us to arrange installation services in your area.</p>
             </div>
           </div>
 
@@ -270,10 +296,24 @@
               <i class="fas fa-chevron-down"></i>
             </div>
             <div class="faq-answer">
-              <p>
-                Standard delivery takes 3-5 business days within India. Express
-                delivery options are available for urgent requirements.
-              </p>
+              <p>We offer flexible delivery options to meet your needs:</p>
+              <ul>
+                <li>
+                  <strong>Standard Delivery:</strong> 3-5 business days within
+                  Gujarat
+                </li>
+                <li>
+                  <strong>Express Delivery:</strong> 1-2 business days for
+                  urgent orders
+                </li>
+                <li><strong>Pan-India Delivery:</strong> 5-7 business days</li>
+                <li>
+                  <strong>Bulk Orders:</strong> Custom delivery schedules
+                  available
+                </li>
+                <li>Free delivery for orders above ₹10,000</li>
+              </ul>
+              <p>Track your order in real-time with our tracking system.</p>
             </div>
           </div>
 
@@ -284,8 +324,21 @@
             </div>
             <div class="faq-answer">
               <p>
-                Yes, we offer custom manufacturing services for bulk orders.
-                Contact our technical team to discuss your specific
+                Yes, we specialize in custom manufacturing services for bulk
+                orders. Our custom services include:
+              </p>
+              <ul>
+                <li>
+                  Custom design and engineering based on your specifications
+                </li>
+                <li>Prototype development and testing</li>
+                <li>Bulk manufacturing with consistent quality</li>
+                <li>Competitive pricing for large orders</li>
+                <li>Dedicated project manager for your order</li>
+                <li>Flexible production schedules</li>
+              </ul>
+              <p>
+                Contact our technical team at +91 9328629936 to discuss your
                 requirements.
               </p>
             </div>
@@ -304,17 +357,26 @@
               <span>Patel Motors</span>
             </div>
             <p>
-              Manufacturing excellence in automobile parts since 1995. Your
+              Manufacturing excellence in automobile parts since 1990. Your
               trusted partner for quality and reliability.
             </p>
             <div class="social-links">
-              <a href="#" class="social-link"
+              <a
+                href="https://www.facebook.com/profile.php?id=61571666008542"
+                target="_blank"
+                class="social-link"
                 ><i class="fab fa-facebook"></i
               ></a>
-              <a href="#" class="social-link"
+              <a
+                href="https://www.instagram.com/patelmotors8080?igsh=MW55Ymx2bWFvdHF4"
+                target="_blank"
+                class="social-link"
                 ><i class="fab fa-instagram"></i
               ></a>
-              <a href="#" class="social-link"
+              <a
+                href="https://www.linkedin.com/in/patel-motors-2abb62386?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                target="_blank"
+                class="social-link"
                 ><i class="fab fa-linkedin"></i
               ></a>
             </div>
@@ -324,6 +386,7 @@
             <ul>
               <li><a href="about.html">About Us</a></li>
               <li><a href="products.html">Products</a></li>
+              <li><a href="catalogue.html">Catalogue</a></li>
               <li><a href="contact.html">Contact</a></li>
               <li><a href="#" onclick="toggleTheme()">Toggle Theme</a></li>
             </ul>
@@ -341,7 +404,7 @@
             <h4>Contact Info</h4>
             <div class="contact-info">
               <p><i class="fas fa-phone"></i> +91 9328629936</p>
-              <p><i class="fas fa-envelope"></i> patel.motors.7680@gmail.com</p>
+              <p><i class="fas fa-envelope"></i> patel.motors.7860@gmail.com</p>
               <p>
                 <i class="fas fa-map-marker-alt"></i> Mahi Road, near Bilal Farm
                 Road, Mahi, Gujarat 385210
@@ -350,7 +413,7 @@
           </div>
         </div>
         <div class="footer-bottom">
-          <p>&copy; 2024 Patel Motors. All rights reserved.</p>
+          <p>&copy; 1990 Patel Motors. All rights reserved.</p>
         </div>
       </div>
     </footer>

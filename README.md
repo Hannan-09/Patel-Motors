@@ -159,4 +159,4 @@ For technical support or customization requests, contact the development team.
 
 ## License
 
-© 2024 Patel Motors. All rights reserved.
+© 1990 Patel Motors. All rights reserved.
