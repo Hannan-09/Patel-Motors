@@ -62,7 +62,7 @@
 
 /* Categories Sidebar */
 .categories-sidebar {
-  /* background: var(--primary-color); */
+  background: var(--primary-color);
   padding: 2rem;
   color: white;
   position: sticky;
