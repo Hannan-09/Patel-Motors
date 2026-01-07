@@ -3,7 +3,7 @@
 // Form validation
 function initFormValidation() {
   const form = document.getElementById("contactForm");
-  const inputs = form.querySelectorAll("input, select, textarea");
+  const inputs = form.querySelectorAll("input:not([type='hidden']), select, textarea");
 
   // Add real-time validation
   inputs.forEach((input) => {
@@ -84,6 +84,8 @@ function getFieldLabel(fieldName) {
 
 function showError(field, message) {
   const formGroup = field.closest(".form-group");
+  if (!formGroup) return;
+
   formGroup.classList.add("error");
   formGroup.classList.remove("success");
 
@@ -98,20 +100,26 @@ function showError(field, message) {
 
 function showSuccess(field) {
   const formGroup = field.closest(".form-group");
+  if (!formGroup) return;
+
   formGroup.classList.add("success");
   formGroup.classList.remove("error");
 }
 
 function clearError(field) {
   const formGroup = field.closest(".form-group");
-  formGroup.classList.remove("error", "success");
+  if (formGroup) {
+    formGroup.classList.remove("error", "success");
+  }
 }
 
 function handleFormSubmit(e) {
   e.preventDefault();
 
   const form = e.target;
-  const inputs = form.querySelectorAll("input, select, textarea");
+  const inputs = form.querySelectorAll(
+    "input:not([type='hidden']), select, textarea"
+  );
   let isFormValid = true;
 
   // Validate all fields
