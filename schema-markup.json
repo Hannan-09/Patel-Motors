@@ -1,0 +1,170 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "AutomotiveBusiness",
+      "@id": "https://patelmotor.in/#organization",
+      "name": "Patel Motors",
+      "alternateName": "Patel Motors Gujarat",
+      "url": "https://patelmotor.in",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://patelmotor.in/assets/logo.png",
+        "width": 250,
+        "height": 60
+      },
+      "description": "Leading manufacturer of premium car body parts for Bolero, Swift, Mahindra, Eicher, Tata, Hyundai vehicles since 1990",
+      "telephone": "+919328629936",
+      "email": "patel.motors.7860@gmail.com",
+      "foundingDate": "1990",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Mahi Road, near Bilal Farm Road",
+        "addressLocality": "Mahi",
+        "addressRegion": "Gujarat",
+        "postalCode": "385210",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "24.029301",
+        "longitude": "72.372503"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "09:00",
+          "closes": "18:00"
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=61571666008542",
+        "https://www.instagram.com/patelmotors8080",
+        "https://www.linkedin.com/in/patel-motors-2abb62386"
+      ],
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Car Body Parts",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "Bolero Body Parts",
+              "description": "Complete range of Mahindra Bolero body parts including doors, bumpers, mudguards, fenders"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "Swift Body Parts",
+              "description": "Premium Maruti Swift body parts including doors, bumpers, chassis"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "Pickup Truck Parts",
+              "description": "Heavy-duty pickup truck body parts including bed, guard, tailgate"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "Tata Vehicle Parts",
+              "description": "Tata vehicle body parts including cabin and chassis"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "Hyundai Body Parts",
+              "description": "Hyundai vehicle body parts including doors and bumpers"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://patelmotor.in/#website",
+      "url": "https://patelmotor.in",
+      "name": "Patel Motors - Car Body Parts Manufacturer",
+      "description": "Leading car body parts manufacturer in Gujarat",
+      "publisher": {
+        "@id": "https://patelmotor.in/#organization"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://patelmotor.in/products.html?search={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://patelmotor.in/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://patelmotor.in"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What car body parts does Patel Motors manufacture?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Patel Motors manufactures a complete range of car body parts including doors (left and right), bumpers (front and rear), mudguards, fenders, chassis, havabari, pillars, and glass for vehicles like Bolero, Swift, Mahindra, Eicher, Tata, and Hyundai."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you ship car parts across India?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we provide fast delivery across India. Standard delivery takes 3-5 business days within Gujarat and 5-7 business days for pan-India delivery. Express delivery options are also available."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the warranty on car body parts?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We provide a comprehensive 2-year warranty on all manufactured parts covering manufacturing defects, material quality issues, and premature wear under normal usage conditions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can I order Bolero or Swift parts?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can order by calling +91 9328629936, emailing patel.motors.7860@gmail.com, or visiting our facility in Mahi, Gujarat. We also accept WhatsApp orders for quick inquiries."
+          }
+        }
+      ]
+    }
+  ]
+}

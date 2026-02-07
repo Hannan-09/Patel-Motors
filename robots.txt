@@ -1,0 +1,24 @@
+User-agent: *
+Allow: /
+Disallow: /js/
+Disallow: /styles/
+
+# Sitemap
+Sitemap: https://patelmotor.in/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Allow Google Image Bot
+User-agent: Googlebot-Image
+Allow: /assets/
+
+# Allow all major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
