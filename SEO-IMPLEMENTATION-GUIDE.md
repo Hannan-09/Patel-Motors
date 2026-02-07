@@ -1,6 +1,7 @@
 # SEO Implementation Guide for Patel Motors Website
 
 ## ✅ Files Created
+
 1. **sitemap.xml** - Helps Google crawl your website
 2. **robots.txt** - Controls search engine crawling
 3. **.htaccess** - Performance & security optimization
@@ -8,46 +9,77 @@
 ## 🎯 Meta Tags to Add to Each Page
 
 ### INDEX.HTML (Homepage)
+
 Replace the `<head>` section with:
 
 ```html
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <!-- Primary Meta Tags -->
-    <title>Patel Motors - Car Body Parts Manufacturer | Bolero, Swift, Mahindra, Eicher Parts Gujarat</title>
-    <meta name="title" content="Patel Motors - Car Body Parts Manufacturer | Bolero, Swift, Mahindra, Eicher Parts Gujarat" />
-    <meta name="description" content="Leading car body parts manufacturer in Gujarat. Premium quality doors, bumpers, mudguards, fenders, chassis for Bolero, Swift, Mahindra, Eicher, Tata, Hyundai. Best automobile spare parts supplier since 1990." />
-    <meta name="keywords" content="car body parts, bolero parts, swift parts, mahindra parts, eicher parts, car door, car bumper, mudguard, fender, chassis, automobile parts manufacturer, car spare parts, vehicle body parts, bolero door, swift bumper, pickup parts, tata parts, hyundai parts, car parts Gujarat, auto parts manufacturer India, havabari, pillar, glass, left door, right door, front bumper, rear bumper" />
-    <meta name="author" content="Patel Motors" />
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-    <link rel="canonical" href="https://patelmotor.in/" />
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://patelmotor.in/" />
-    <meta property="og:title" content="Patel Motors - Car Body Parts Manufacturer | Bolero, Swift, Mahindra Parts" />
-    <meta property="og:description" content="Premium quality car body parts - doors, bumpers, mudguards, fenders for Bolero, Swift, Mahindra, Eicher, Tata, Hyundai. Trusted manufacturer since 1990." />
-    <meta property="og:image" content="https://patelmotor.in/assets/logo.png" />
-    <meta property="og:locale" content="en_IN" />
-    <meta property="og:site_name" content="Patel Motors" />
-    
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://patelmotor.in/" />
-    <meta property="twitter:title" content="Patel Motors - Car Body Parts Manufacturer | Bolero, Swift, Mahindra Parts" />
-    <meta property="twitter:description" content="Premium quality car body parts - doors, bumpers, mudguards, fenders for Bolero, Swift, Mahindra, Eicher, Tata, Hyundai. Trusted manufacturer since 1990." />
-    <meta property="twitter:image" content="https://patelmotor.in/assets/logo.png" />
-    
-    <!-- Geo Tags -->
-    <meta name="geo.region" content="IN-GJ" />
-    <meta name="geo.placename" content="Mahi, Gujarat" />
-    <meta name="geo.position" content="24.029301;72.372503" />
-    <meta name="ICBM" content="24.029301, 72.372503" />
-    
-    <!-- Structured Data - Organization -->
-    <script type="application/ld+json">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary Meta Tags -->
+  <title>
+    Patel Motors - Car Body Parts Manufacturer | Bolero, Swift, Mahindra, Eicher
+    Parts Gujarat
+  </title>
+  <meta
+    name="title"
+    content="Patel Motors - Car Body Parts Manufacturer | Bolero, Swift, Mahindra, Eicher Parts Gujarat"
+  />
+  <meta
+    name="description"
+    content="Leading car body parts manufacturer in Gujarat. Premium quality doors, bumpers, mudguards, fenders, chassis for Bolero, Swift, Mahindra, Eicher, Tata, Hyundai. Best automobile spare parts supplier since 1990."
+  />
+  <meta
+    name="keywords"
+    content="car body parts, bolero parts, swift parts, mahindra parts, eicher parts, car door, car bumper, mudguard, fender, chassis, automobile parts manufacturer, car spare parts, vehicle body parts, bolero door, swift bumper, pickup parts, tata parts, hyundai parts, car parts Gujarat, auto parts manufacturer India, havabari, pillar, glass, left door, right door, front bumper, rear bumper"
+  />
+  <meta name="author" content="Patel Motors" />
+  <meta
+    name="robots"
+    content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+  />
+  <link rel="canonical" href="https://patelmotor.in/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://patelmotor.in/" />
+  <meta
+    property="og:title"
+    content="Patel Motors - Car Body Parts Manufacturer | Bolero, Swift, Mahindra Parts"
+  />
+  <meta
+    property="og:description"
+    content="Premium quality car body parts - doors, bumpers, mudguards, fenders for Bolero, Swift, Mahindra, Eicher, Tata, Hyundai. Trusted manufacturer since 1990."
+  />
+  <meta property="og:image" content="https://patelmotor.in/assets/logo.png" />
+  <meta property="og:locale" content="en_IN" />
+  <meta property="og:site_name" content="Patel Motors" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://patelmotor.in/" />
+  <meta
+    property="twitter:title"
+    content="Patel Motors - Car Body Parts Manufacturer | Bolero, Swift, Mahindra Parts"
+  />
+  <meta
+    property="twitter:description"
+    content="Premium quality car body parts - doors, bumpers, mudguards, fenders for Bolero, Swift, Mahindra, Eicher, Tata, Hyundai. Trusted manufacturer since 1990."
+  />
+  <meta
+    property="twitter:image"
+    content="https://patelmotor.in/assets/logo.png"
+  />
+
+  <!-- Geo Tags -->
+  <meta name="geo.region" content="IN-GJ" />
+  <meta name="geo.placename" content="Mahi, Gujarat" />
+  <meta name="geo.position" content="24.029301;72.372503" />
+  <meta name="ICBM" content="24.029301, 72.372503" />
+
+  <!-- Structured Data - Organization -->
+  <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "AutomotiveBusiness",
@@ -57,7 +89,7 @@ Replace the `<head>` section with:
       "logo": "https://patelmotor.in/assets/logo.png",
       "image": "https://patelmotor.in/assets/logo.png",
       "telephone": "+919328629936",
-      "email": "patel.motors.7860@gmail.com",
+      "email": "patelmotor.connect@gmail.com",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Mahi Road, near Bilal Farm Road",
@@ -73,7 +105,14 @@ Replace the `<head>` section with:
       },
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
         "opens": "09:00",
         "closes": "18:00"
       },
@@ -85,10 +124,10 @@ Replace the `<head>` section with:
         "https://www.linkedin.com/in/patel-motors-2abb62386"
       ]
     }
-    </script>
-    
-    <!-- Structured Data - Products -->
-    <script type="application/ld+json">
+  </script>
+
+  <!-- Structured Data - Products -->
+  <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "ItemList",
@@ -121,45 +160,70 @@ Replace the `<head>` section with:
         }
       ]
     }
-    </script>
-    
-    <link rel="stylesheet" href="styles/main.css" />
-    <!-- rest of your existing links -->
+  </script>
+
+  <link rel="stylesheet" href="styles/main.css" />
+  <!-- rest of your existing links -->
 </head>
 ```
 
 ---
 
 ### PRODUCTS.HTML
+
 Replace the `<head>` section with:
 
 ```html
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <!-- Primary Meta Tags -->
-    <title>Car Body Parts Catalog | Bolero Door, Swift Bumper, Mudguard, Fender - Patel Motors</title>
-    <meta name="title" content="Car Body Parts Catalog | Bolero Door, Swift Bumper, Mudguard, Fender - Patel Motors" />
-    <meta name="description" content="Browse 100+ car body parts: Bolero doors, Swift bumpers, mudguards, fenders, chassis, havabari, pillars. Premium quality parts for Mahindra, Maruti, Tata, Eicher, Hyundai vehicles. Shop now!" />
-    <meta name="keywords" content="bolero door left, bolero door right, swift bumper front, swift bumper rear, car mudguard, car fender, bolero mudguard, swift door, pickup bed, pickup guard, tata cabin, tata chassis, hyundai bumper, hyundai door, car body parts online, automobile spare parts, vehicle parts catalog, bolero spare parts, swift spare parts, havabari, pillar, glass, chassis parts" />
-    <meta name="robots" content="index, follow, max-image-preview:large" />
-    <link rel="canonical" href="https://patelmotor.in/products.html" />
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://patelmotor.in/products.html" />
-    <meta property="og:title" content="Car Body Parts Catalog | Bolero, Swift, Mahindra Parts - Patel Motors" />
-    <meta property="og:description" content="Browse 100+ premium car body parts: doors, bumpers, mudguards, fenders for all major vehicles. Quality guaranteed." />
-    <meta property="og:image" content="https://patelmotor.in/assets/products/bolero-door.jpg" />
-    
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://patelmotor.in/products.html" />
-    <meta property="twitter:title" content="Car Body Parts Catalog | Bolero, Swift, Mahindra Parts" />
-    
-    <!-- Structured Data - Product Catalog -->
-    <script type="application/ld+json">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary Meta Tags -->
+  <title>
+    Car Body Parts Catalog | Bolero Door, Swift Bumper, Mudguard, Fender - Patel
+    Motors
+  </title>
+  <meta
+    name="title"
+    content="Car Body Parts Catalog | Bolero Door, Swift Bumper, Mudguard, Fender - Patel Motors"
+  />
+  <meta
+    name="description"
+    content="Browse 100+ car body parts: Bolero doors, Swift bumpers, mudguards, fenders, chassis, havabari, pillars. Premium quality parts for Mahindra, Maruti, Tata, Eicher, Hyundai vehicles. Shop now!"
+  />
+  <meta
+    name="keywords"
+    content="bolero door left, bolero door right, swift bumper front, swift bumper rear, car mudguard, car fender, bolero mudguard, swift door, pickup bed, pickup guard, tata cabin, tata chassis, hyundai bumper, hyundai door, car body parts online, automobile spare parts, vehicle parts catalog, bolero spare parts, swift spare parts, havabari, pillar, glass, chassis parts"
+  />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://patelmotor.in/products.html" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://patelmotor.in/products.html" />
+  <meta
+    property="og:title"
+    content="Car Body Parts Catalog | Bolero, Swift, Mahindra Parts - Patel Motors"
+  />
+  <meta
+    property="og:description"
+    content="Browse 100+ premium car body parts: doors, bumpers, mudguards, fenders for all major vehicles. Quality guaranteed."
+  />
+  <meta
+    property="og:image"
+    content="https://patelmotor.in/assets/products/bolero-door.jpg"
+  />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://patelmotor.in/products.html" />
+  <meta
+    property="twitter:title"
+    content="Car Body Parts Catalog | Bolero, Swift, Mahindra Parts"
+  />
+
+  <!-- Structured Data - Product Catalog -->
+  <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "CollectionPage",
@@ -184,40 +248,59 @@ Replace the `<head>` section with:
         ]
       }
     }
-    </script>
-    
-    <link rel="stylesheet" href="styles/main.css" />
-    <!-- rest of your existing links -->
+  </script>
+
+  <link rel="stylesheet" href="styles/main.css" />
+  <!-- rest of your existing links -->
 </head>
 ```
 
 ---
 
 ### ABOUT.HTML
+
 Replace the `<head>` section with:
 
 ```html
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <!-- Primary Meta Tags -->
-    <title>About Patel Motors - Leading Car Body Parts Manufacturer Since 1990 | Gujarat</title>
-    <meta name="title" content="About Patel Motors - Leading Car Body Parts Manufacturer Since 1990 | Gujarat" />
-    <meta name="description" content="Patel Motors - 35+ years of excellence in manufacturing car body parts. Trusted supplier of Bolero, Swift, Mahindra, Eicher parts. ISO certified manufacturer in Gujarat, India." />
-    <meta name="keywords" content="patel motors, car parts manufacturer Gujarat, automobile parts manufacturer India, bolero parts manufacturer, swift parts manufacturer, car body parts factory, auto parts supplier, vehicle parts manufacturer, trusted car parts company" />
-    <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://patelmotor.in/about.html" />
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://patelmotor.in/about.html" />
-    <meta property="og:title" content="About Patel Motors - Leading Car Body Parts Manufacturer Since 1990" />
-    <meta property="og:description" content="35+ years of excellence in manufacturing premium car body parts. Trusted by thousands across India." />
-    <meta property="og:image" content="https://patelmotor.in/assets/logo.png" />
-    
-    <!-- Structured Data - About Page -->
-    <script type="application/ld+json">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary Meta Tags -->
+  <title>
+    About Patel Motors - Leading Car Body Parts Manufacturer Since 1990 |
+    Gujarat
+  </title>
+  <meta
+    name="title"
+    content="About Patel Motors - Leading Car Body Parts Manufacturer Since 1990 | Gujarat"
+  />
+  <meta
+    name="description"
+    content="Patel Motors - 35+ years of excellence in manufacturing car body parts. Trusted supplier of Bolero, Swift, Mahindra, Eicher parts. ISO certified manufacturer in Gujarat, India."
+  />
+  <meta
+    name="keywords"
+    content="patel motors, car parts manufacturer Gujarat, automobile parts manufacturer India, bolero parts manufacturer, swift parts manufacturer, car body parts factory, auto parts supplier, vehicle parts manufacturer, trusted car parts company"
+  />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://patelmotor.in/about.html" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://patelmotor.in/about.html" />
+  <meta
+    property="og:title"
+    content="About Patel Motors - Leading Car Body Parts Manufacturer Since 1990"
+  />
+  <meta
+    property="og:description"
+    content="35+ years of excellence in manufacturing premium car body parts. Trusted by thousands across India."
+  />
+  <meta property="og:image" content="https://patelmotor.in/assets/logo.png" />
+
+  <!-- Structured Data - About Page -->
+  <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "AboutPage",
@@ -233,40 +316,58 @@ Replace the `<head>` section with:
         "slogan": "Crafting Excellence in Automobile Manufacturing Since 1990"
       }
     }
-    </script>
-    
-    <link rel="stylesheet" href="styles/main.css" />
-    <!-- rest of your existing links -->
+  </script>
+
+  <link rel="stylesheet" href="styles/main.css" />
+  <!-- rest of your existing links -->
 </head>
 ```
 
 ---
 
 ### CONTACT.HTML
+
 Replace the `<head>` section with:
 
 ```html
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <!-- Primary Meta Tags -->
-    <title>Contact Patel Motors - Car Body Parts Supplier Gujarat | +91 9328629936</title>
-    <meta name="title" content="Contact Patel Motors - Car Body Parts Supplier Gujarat | +91 9328629936" />
-    <meta name="description" content="Contact Patel Motors for car body parts inquiry. Call +91 9328629936 or visit us in Mahi, Gujarat. Get quotes for Bolero, Swift, Mahindra, Eicher parts. Fast delivery across India." />
-    <meta name="keywords" content="contact patel motors, car parts supplier Gujarat, automobile parts inquiry, bolero parts price, swift parts quote, car body parts contact, buy car parts Gujarat, car parts dealer Mahi, auto parts supplier contact" />
-    <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://patelmotor.in/contact.html" />
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://patelmotor.in/contact.html" />
-    <meta property="og:title" content="Contact Patel Motors - Car Body Parts Supplier Gujarat" />
-    <meta property="og:description" content="Get in touch for car body parts inquiry. Call +91 9328629936. Fast delivery across India." />
-    <meta property="og:image" content="https://patelmotor.in/assets/logo.png" />
-    
-    <!-- Structured Data - Contact Page -->
-    <script type="application/ld+json">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary Meta Tags -->
+  <title>
+    Contact Patel Motors - Car Body Parts Supplier Gujarat | +91 9328629936
+  </title>
+  <meta
+    name="title"
+    content="Contact Patel Motors - Car Body Parts Supplier Gujarat | +91 9328629936"
+  />
+  <meta
+    name="description"
+    content="Contact Patel Motors for car body parts inquiry. Call +91 9328629936 or visit us in Mahi, Gujarat. Get quotes for Bolero, Swift, Mahindra, Eicher parts. Fast delivery across India."
+  />
+  <meta
+    name="keywords"
+    content="contact patel motors, car parts supplier Gujarat, automobile parts inquiry, bolero parts price, swift parts quote, car body parts contact, buy car parts Gujarat, car parts dealer Mahi, auto parts supplier contact"
+  />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://patelmotor.in/contact.html" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://patelmotor.in/contact.html" />
+  <meta
+    property="og:title"
+    content="Contact Patel Motors - Car Body Parts Supplier Gujarat"
+  />
+  <meta
+    property="og:description"
+    content="Get in touch for car body parts inquiry. Call +91 9328629936. Fast delivery across India."
+  />
+  <meta property="og:image" content="https://patelmotor.in/assets/logo.png" />
+
+  <!-- Structured Data - Contact Page -->
+  <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "ContactPage",
@@ -277,7 +378,7 @@ Replace the `<head>` section with:
         "@type": "LocalBusiness",
         "name": "Patel Motors",
         "telephone": "+919328629936",
-        "email": "patel.motors.7860@gmail.com",
+        "email": "patelmotor.connect@gmail.com",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Mahi Road, near Bilal Farm Road",
@@ -288,40 +389,59 @@ Replace the `<head>` section with:
         }
       }
     }
-    </script>
-    
-    <link rel="stylesheet" href="styles/main.css" />
-    <!-- rest of your existing links -->
+  </script>
+
+  <link rel="stylesheet" href="styles/main.css" />
+  <!-- rest of your existing links -->
 </head>
 ```
 
 ---
 
 ### CATALOGUE.HTML
+
 Replace the `<head>` section with:
 
 ```html
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <!-- Primary Meta Tags -->
-    <title>Download Car Parts Catalog PDF - Bolero, Swift, Scorpio Parts Price List | Patel Motors</title>
-    <meta name="title" content="Download Car Parts Catalog PDF - Bolero, Swift, Scorpio Parts Price List | Patel Motors" />
-    <meta name="description" content="Download free car body parts catalog PDF. Complete price list and specifications for Bolero, Swift, Mahindra Scorpio, Eicher, Tata parts. Get detailed product information." />
-    <meta name="keywords" content="car parts catalog pdf, bolero parts price list, swift parts catalog, scorpio parts pdf, car body parts catalog download, automobile parts brochure, vehicle parts price list, car spare parts catalog" />
-    <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://patelmotor.in/catalogue.html" />
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://patelmotor.in/catalogue.html" />
-    <meta property="og:title" content="Download Car Parts Catalog PDF - Patel Motors" />
-    <meta property="og:description" content="Free download: Complete car body parts catalog with prices and specifications." />
-    <meta property="og:image" content="https://patelmotor.in/assets/logo.png" />
-    
-    <link rel="stylesheet" href="styles/main.css" />
-    <!-- rest of your existing links -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary Meta Tags -->
+  <title>
+    Download Car Parts Catalog PDF - Bolero, Swift, Scorpio Parts Price List |
+    Patel Motors
+  </title>
+  <meta
+    name="title"
+    content="Download Car Parts Catalog PDF - Bolero, Swift, Scorpio Parts Price List | Patel Motors"
+  />
+  <meta
+    name="description"
+    content="Download free car body parts catalog PDF. Complete price list and specifications for Bolero, Swift, Mahindra Scorpio, Eicher, Tata parts. Get detailed product information."
+  />
+  <meta
+    name="keywords"
+    content="car parts catalog pdf, bolero parts price list, swift parts catalog, scorpio parts pdf, car body parts catalog download, automobile parts brochure, vehicle parts price list, car spare parts catalog"
+  />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://patelmotor.in/catalogue.html" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://patelmotor.in/catalogue.html" />
+  <meta
+    property="og:title"
+    content="Download Car Parts Catalog PDF - Patel Motors"
+  />
+  <meta
+    property="og:description"
+    content="Free download: Complete car body parts catalog with prices and specifications."
+  />
+  <meta property="og:image" content="https://patelmotor.in/assets/logo.png" />
+
+  <link rel="stylesheet" href="styles/main.css" />
+  <!-- rest of your existing links -->
 </head>
 ```
 
@@ -330,44 +450,52 @@ Replace the `<head>` section with:
 ## 📋 Next Steps - IMPORTANT!
 
 ### 1. Submit to Google Search Console
+
 - Go to: https://search.google.com/search-console
 - Add your website: patelmotor.in
 - Submit sitemap: https://patelmotor.in/sitemap.xml
 - Request indexing for all pages
 
 ### 2. Submit to Bing Webmaster Tools
+
 - Go to: https://www.bing.com/webmasters
 - Add your website
 - Submit sitemap
 
 ### 3. Google My Business
+
 - Create/claim your business listing
 - Add photos, hours, location
 - Get customer reviews
 
 ### 4. Create Backlinks
+
 - List on IndiaMART, TradeIndia, JustDial
 - Create social media posts with links
 - Get listed in automobile directories
 - Partner websites linking to you
 
 ### 5. Content Optimization
+
 - Add blog section with articles like:
   - "How to Choose Right Bolero Door"
   - "Mudguard Maintenance Tips"
   - "Swift Bumper Installation Guide"
 
 ### 6. Image Optimization
+
 - Rename images: bolero-door-left.jpg, swift-bumper-front.jpg
 - Add alt text to all images
 - Compress images for faster loading
 
 ### 7. Local SEO
+
 - Get listed on Google Maps
 - Add business to local directories
 - Get reviews from customers
 
 ### 8. Monitor Performance
+
 - Install Google Analytics
 - Track keyword rankings
 - Monitor traffic growth
@@ -395,6 +523,7 @@ Replace the `<head>` section with:
 ---
 
 ## 📞 Support
+
 If you need help implementing these changes, contact your web developer or reach out for assistance.
 
 **Good luck with your SEO! Your website will start ranking within 2-4 weeks after implementation.**

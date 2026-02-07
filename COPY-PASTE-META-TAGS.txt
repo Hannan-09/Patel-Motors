@@ -58,7 +58,7 @@ INDEX.HTML - HOMEPAGE
       "logo": "https://patelmotor.in/assets/logo.png",
       "image": "https://patelmotor.in/assets/logo.png",
       "telephone": "+919328629936",
-      "email": "patel.motors.7860@gmail.com",
+      "email": "patelmotor.connect@gmail.com",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Mahi Road, near Bilal Farm Road",
@@ -280,7 +280,7 @@ CONTACT.HTML - CONTACT PAGE
         "@type": "LocalBusiness",
         "name": "Patel Motors",
         "telephone": "+919328629936",
-        "email": "patel.motors.7860@gmail.com",
+        "email": "patelmotor.connect@gmail.com",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Mahi Road, near Bilal Farm Road",

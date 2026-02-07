@@ -391,7 +391,7 @@ If you follow this plan consistently for 3 months, you WILL:
 **Patel Motors**
 
 - Phone: +91 9328629936
-- Email: patel.motors.7860@gmail.com
+- Email: patelmotor.connect@gmail.com
 - Website: https://patelmotor.in
 - Address: Mahi Road, near Bilal Farm Road, Mahi, Gujarat 385210
 

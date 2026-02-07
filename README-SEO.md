@@ -350,7 +350,7 @@ Google will show rich results with:
 
 - **Name:** Patel Motors
 - **Phone:** +91 9328629936
-- **Email:** patel.motors.7860@gmail.com
+- **Email:** patelmotor.connect@gmail.com
 - **Address:** Mahi Road, near Bilal Farm Road, Mahi, Gujarat 385210
 - **Hours:** Monday-Saturday: 9:00 AM - 6:00 PM
 
