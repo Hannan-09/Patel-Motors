@@ -1,5 +1,7 @@
 User-agent: *
 Allow: /
+Allow: /favicon.ico
+Allow: /assets/favicon.png
 Disallow: /js/
 Disallow: /styles/
 
